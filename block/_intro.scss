@@ -1,0 +1,82 @@
+$color__dark: #333;
+$color__white: #ffffff;
+$color__green: #0e8784;
+$color__activegreen: #66d2cf;
+
+body {
+  color: $color__dark;
+}
+
+.intro__section {
+  background-color: $color__dark;
+  border-radius: 12px;
+  margin: 40px 0;
+  padding: 60px 0;
+  color: $color__white;
+  background-image: url("../Img/Bitmap.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.intro__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.intro__content {
+  flex: 1;
+  width: 500px;
+}
+
+.intro__title {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fefcf7;
+  margin-bottom: 24px;
+}
+
+.intro__text {
+  width: 500px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fefcf7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin-bottom: 32px;
+}
+
+.intro__button {
+  display: inline-block;
+  background-color: $color__green;
+  color: $color__white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.2);
+    background: $color__activegreen;
+  }
+}
+
+.intro__image {
+  flex: 1;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+  }
+}

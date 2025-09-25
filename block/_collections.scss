@@ -1,0 +1,61 @@
+.collections {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  position: relative;
+  margin-top: 200px;
+  width: 1200px;
+  margin: auto;
+
+  &__cards {
+    text-align: center;
+    z-index: 5;
+
+    img {
+      width: 150px;
+      height: auto;
+    }
+
+    .collections__text {
+      .collections__secondsubtitle {
+        font-family: "Barlow";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #333d4b;
+      }
+
+      .collections__subtitle {
+        font-family: "Fraunces";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+
+        color: #333d4b;
+      }
+    }
+  }
+  .collections__maintext {
+    font-size: 100px;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 200px;
+    left: 350px;
+    -webkit-box-shadow: 2px 29px 31px 35px rgba(198, 205, 210, 0.2);
+    -moz-box-shadow: 2px 29px 31px 35px rgba(198, 205, 210, 0.2);
+    box-shadow: 2px 29px 31px 35px rgba(198, 205, 210, 0.2);
+    background: linear-gradient(
+      180deg,
+      rgba(254, 252, 247, 0.0001) 0%,
+      #fefcf7 100%
+    );
+  }
+}
+
+.collections__wrapper {
+  width: 100%;
+}
