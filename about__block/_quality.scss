@@ -1,0 +1,56 @@
+.quality {
+  background-color: #242b33;
+  padding: 94px 32px;
+  width: 100%;
+  margin-top: 100px;
+  position: relative;
+
+  &__container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+  }
+
+  &__box {
+    flex: 1;
+    margin-bottom: 100px;
+  }
+
+  &__title {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #fefcf7;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fefcf7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  &__img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__image {
+    position: absolute;
+    border-radius: 8px;
+    object-fit: cover;
+    bottom: 70px;
+  }
+}

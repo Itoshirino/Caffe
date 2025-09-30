@@ -1,16 +1,15 @@
-
 body {
   color: #333;
 }
 
 .intro__works {
-  background: url("../Img/coffe.png");
+  background: url("../Img/bg__img.png");
   background-size: cover;
-  background-position:  center;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin-top: 70px;
-  padding: 30px 40px;
+  padding: 90px 40px;
   margin-bottom: 70px;
 }
 
@@ -19,7 +18,7 @@ body {
   border-radius: 12px;
   margin: 40px 0;
   padding: 20px 0;
-  color: #FFF;
+  color: #fff;
 }
 
 .intro__container {
@@ -39,10 +38,9 @@ body {
   font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
-  font-size: 72px;
-  line-height: 72px;
+  font-size: 40px;
+  line-height: 48px;
   color: #fefcf7;
-  margin-bottom: 24px;
 }
 
 .intro__text {

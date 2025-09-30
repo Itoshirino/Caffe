@@ -32,6 +32,8 @@
       justify-content: space-between;
 
       &__num {
+        font-family: "Fraunces";
+        font-style: normal;
         font-weight: 900;
         font-size: 72px;
         line-height: 72px;
@@ -49,6 +51,8 @@
       &__subtitle {
         width: 285px;
         height: 130px;
+        font-family: "Barlow";
+        font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 26px;
@@ -69,7 +73,7 @@
     line-height: 25px;
     text-align: center;
     color: #fefcf7;
-    transition: transform 0.3s ease,color 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
 
     &:hover {
       background: #17f8f4;
@@ -85,5 +89,3 @@
     }
   }
 }
-
-
