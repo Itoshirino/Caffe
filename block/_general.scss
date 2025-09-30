@@ -11,3 +11,8 @@ a {
 li {
   list-style: none;
 }
+
+::selection {
+  background: #a0f0ed;
+  color: #00332e;
+}
