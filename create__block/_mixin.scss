@@ -17,3 +17,8 @@
 @mixin nav($bg_color) {
   background-color: $bg_color;
 }
+
+@mixin borders($border){
+  border: $border;
+}
+

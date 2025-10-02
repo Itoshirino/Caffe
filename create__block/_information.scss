@@ -1,0 +1,157 @@
+@import "../create__block/mixin";
+
+.information__wrapper {
+  width: 100%;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 50px;
+  flex-direction: row;
+  width: 1200px;
+  height: 2000px;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+
+  &__links {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  &__links span {
+    display: inline-block;
+    margin-right: 10px;
+    color: #545b66;
+    transition: transform 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      color: #0e8784;
+      transform: scale(1.3);
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #545b66;
+    transition: transform 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      transform: scale(1.3);
+      color: #252c36;
+    }
+  }
+
+  &__info {
+    margin-bottom: 30px;
+    width: 1000px;
+  }
+
+  &__headertitle {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 48px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    color: #83888f;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    i {
+      font-size: 28px;
+      color: #0e8784;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: matrix(1, 0, 0, -1, 0, 0);
+      }
+    }
+  }
+
+  &__boxes {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  &__box1,
+  &__box2,
+  &__box3 {
+    width: 228px;
+    height: 250px;
+    border-radius: 8px;
+    padding: 24px;
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    transition: all 0.3s ease;
+  }
+
+  &__box1 {
+    background-color: #f4f1eb;
+    color: #333;
+
+    &:hover {
+      background-color: #e8e3db;
+    }
+  }
+
+  &__box2 {
+    background-color: #0e8784;
+    color: #fff;
+
+    &:hover {
+      background-color: #0b6d6b;
+    }
+  }
+
+  &__box3 {
+    background-color: #f4f1eb;
+    color: #333;
+
+    &:hover {
+      background-color: #e8e3db;
+    }
+  }
+
+  &__box i {
+    font-size: 50px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 200px;
+    color: #0e8784;
+    transition: transform 0.5s ease;
+    position: absolute;
+    bottom: 910px;
+    left: 1010px;
+
+    &:hover {
+      transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+  }
+}
+
+.information__container {
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+  gap: 20px;
+}

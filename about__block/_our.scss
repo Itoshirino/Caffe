@@ -11,7 +11,7 @@
     font-weight: 900;
     font-size: 24px;
     line-height: 32px;
-    @include nav(#83888f);
+    @include duocolor(#83888f);
     margin-bottom: 64px;
   }
 
@@ -27,7 +27,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    max-width: 300px;
+    width: 300px;
   }
 
   &__subtitle {
@@ -36,7 +36,7 @@
     font-weight: 900;
     font-size: 32px;
     line-height: 36px;
-    @include nav(#333d4b);
+    @include duocolor(#333d4b);
     transition: transform 0.3s ease;
 
     &:hover {
@@ -59,11 +59,11 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    @include nav(#333d4b);
+    @include duocolor(#333d4b);
     transition: transform 0.3s ease, color 0.3s ease;
 
     &:hover {
-      @include nav(#0e8784);
+      @include duocolor(#0e8784);
       transform: scale(1.3);
     }
   }

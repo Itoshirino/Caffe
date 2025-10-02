@@ -1,8 +1,8 @@
-@import '../about__block/mixin';
+@import "../about__block/mixin";
 
 .footer__wrapper {
   width: 100%;
-  @include duocolor(#2C343E);
+  background-color: #2C343E;
 }
 
 .footer {
@@ -45,7 +45,7 @@
       transition: transform 0.3s ease, color 0.3s ease;
 
       &:hover {
-        @include nav(aqua);
+        @include color(aqua);
         transform: scale(1.3);
       }
     }

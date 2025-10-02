@@ -1,7 +1,9 @@
-@import '../block/mixin';
-
+@import "../block/mixin";
+.works__wrapper {
+  width: 100%;
+}
 .works {
-  width: 1045px;
+  width: 1200px;
   height: 666px;
   margin: 320px auto;
   display: flex;
@@ -85,7 +87,6 @@
     }
 
     &:active {
-      
       @include borders(2px solid #0e8784);
       color: #0e8784;
     }
