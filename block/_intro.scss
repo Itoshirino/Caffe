@@ -1,84 +1,80 @@
-
-body {
-  color: #333;
-}
+@import "../block/mixin";
 
 .intro__works {
   background: url("../Img/coffe.png");
   background-size: cover;
-  background-position:  center;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin-top: 70px;
   padding: 30px 40px;
   margin-bottom: 70px;
-}
 
-.intro__section {
-  background-color: #333;
-  border-radius: 12px;
-  margin: 40px 0;
-  padding: 20px 0;
-  color: #FFF;
-}
-
-.intro__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.intro__content {
-  flex: 1;
-  width: 500px;
-}
-
-.intro__title {
-  font-family: "Fraunces";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 72px;
-  line-height: 72px;
-  color: #fefcf7;
-  margin-bottom: 24px;
-}
-
-.intro__text {
-  width: 500px;
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  color: #fefcf7;
-  mix-blend-mode: normal;
-  opacity: 0.8;
-  margin-bottom: 32px;
-}
-
-.intro__button {
-  display: inline-block;
-  background-color: #0e8784;
-  color: #fff;
-  padding: 12px 24px;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: transform 0.3s;
-
-  &:hover {
-    transform: scale(1.2);
-    background: #66d2cf;
+  &__section {
+    @include metacolors(#fff, #333);
+    border-radius: 12px;
+    margin: 40px 0;
+    padding: 20px 0;
   }
-}
 
-.intro__image {
-  flex: 1;
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    display: block;
+  &__button {
+    display: inline-block;
+    background-color: #0e8784;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+    &:active {
+      background-color: black;
+    }
+
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  &__content {
+    flex: 1;
+    width: 500px;
+  }
+
+  &__title {
+    @include font__family("Fraunces");
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    @include duocolor(#fefcf7);
+  }
+
+  &__text {
+    @include font__family("Barlow");
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    @include duocolor(#fefcf7);
+    opacity: 0.8;
+    margin-bottom: 32px;
+    max-width: 500px;
+  }
+
+  &__image {
+    flex: 1;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+    }
   }
 }

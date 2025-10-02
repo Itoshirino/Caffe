@@ -1,5 +1,7 @@
+@import '../about__block/mixin';
+
 .quality {
-  background-color: #242b33;
+  @include nav(#242b33);
   padding: 94px 32px;
   width: 100%;
   margin-top: 100px;
@@ -21,22 +23,22 @@
   }
 
   &__title {
-    font-family: "Fraunces";
+    @include font__family("Fraunces");
     font-style: normal;
     font-weight: 900;
     font-size: 40px;
     line-height: 48px;
-    color: #fefcf7;
+    @include duocolor(#fefcf7);
     margin-bottom: 24px;
   }
 
   &__text {
-    font-family: "Barlow";
+    @include font__family("Barlow");
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    color: #fefcf7;
+    @include duocolor(#fefcf7);
     mix-blend-mode: normal;
     opacity: 0.8;
   }

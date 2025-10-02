@@ -1,3 +1,5 @@
+@import '../block/mixin';
+
 .works {
   width: 1045px;
   height: 666px;
@@ -10,7 +12,7 @@
     font-weight: 900;
     font-size: 24px;
     line-height: 32px;
-    color: #83888f;
+    @include color(#83888f);
   }
 
   &__line {
@@ -32,7 +34,7 @@
       justify-content: space-between;
 
       &__num {
-        font-family: "Fraunces";
+        @include font__family("Fraunces");
         font-style: normal;
         font-weight: 900;
         font-size: 72px;
@@ -41,7 +43,7 @@
       }
 
       &__title2 {
-        font-family: "Fraunces";
+        @include font__family("Fraunces");
         font-weight: 900;
         font-size: 32px;
         line-height: 36px;
@@ -51,7 +53,7 @@
       &__subtitle {
         width: 285px;
         height: 130px;
-        font-family: "Barlow";
+        @include font__family("Barlow");
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -67,7 +69,7 @@
     background: #0ba8a6;
     border-radius: 6px;
     border: none;
-    font-family: "Fraunces";
+    @include font__family("Fraunces");
     font-weight: 900;
     font-size: 18px;
     line-height: 25px;
@@ -76,15 +78,15 @@
     transition: transform 0.3s ease, color 0.3s ease;
 
     &:hover {
-      background: #17f8f4;
+      @include nav(#17f8f4);
       transform: scale(1.2);
-      border: 2px solid #0e8784;
+      @include borders(2px solid #0e8784);
       color: #0e8784;
     }
 
     &:active {
-      background: #ffffff;
-      border: 2px solid #0e8784;
+      
+      @include borders(2px solid #0e8784);
       color: #0e8784;
     }
   }

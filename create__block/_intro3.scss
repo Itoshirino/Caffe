@@ -1,23 +1,23 @@
-@import '../about__block/mixin';
+@import '../create__block/mixin';
 
 .intro__works {
-  background: url("../Img/bg__img.png");
+  background: url("../Img/Coffe__bg__img.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 70px 0;
   padding: 90px 40px;
+}
 
-
-&__section {
-  @include metacolors(#fff,#333);
+.intro__section {
+  @include metacolors(#fff, #333);
   border-radius: 12px;
   margin: 40px 0;
   padding: 20px 0;
 }
 
-&__container {
+.intro__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,12 +25,12 @@
   flex-wrap: wrap;
 }
 
-&__content {
+.intro__content {
   flex: 1;
   width: 500px;
 }
 
-&__title {
+.intro__title {
   @include font__family("Fraunces");
   font-weight: 900;
   font-size: 72px;
@@ -38,7 +38,7 @@
   @include duocolor(#fefcf7);
 }
 
-&__text {
+.intro__text {
   @include font__family("Barlow");
   font-weight: 400;
   font-size: 16px;
@@ -46,17 +46,16 @@
   @include duocolor(#fefcf7);
   opacity: 0.8;
   margin-bottom: 32px;
-  width: 500px;
+  max-width: 500px;
 }
 
-&__image {
+.intro__image {
   flex: 1;
-  
+
   img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     display: block;
   }
-}
 }
