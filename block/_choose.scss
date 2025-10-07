@@ -1,4 +1,4 @@
-@import '../block/mixin';
+@import "../block/mixin";
 
 .choose__us {
   background-color: #142020;
@@ -96,4 +96,55 @@
 .choose__wrapper {
   width: 100%;
   background-color: #142020;
+}
+
+@media only screen and (max-width: 500px) {
+  .choose {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 374px;
+    height: 900px;
+    padding: none;
+    &__wrapper {
+      padding: none;
+      width: 374px;
+      position: relative;
+      height: 900px;
+    }
+    .choose__us__option {
+      position: absolute;
+      top: 140px;
+      &:nth-child(2) {
+        top: 550px;
+      }
+      &:nth-child(3) {
+        top: 950px;
+      }
+    }
+    &__title {
+      width: 100%;
+      height: 28px;
+      font-family: "Fraunces 9pt";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 28px;
+      text-align: center;
+      color: #fefcf7;
+    }
+    &__text {
+      width: 100%;
+      height: 128px;
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: center;
+      color: #fefcf7;
+      mix-blend-mode: normal;
+      opacity: 0.8;
+    }
+  }
 }

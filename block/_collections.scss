@@ -1,4 +1,4 @@
-@import '../block/mixin';
+@import "../block/mixin";
 
 .collections {
   display: flex;
@@ -17,8 +17,8 @@
       height: auto;
     }
 
-    .collections__text {
-      .collections__secondsubtitle {
+    &__text {
+      &__secondsubtitle {
         font-family: "Barlow";
         font-style: normal;
         font-weight: 400;
@@ -28,7 +28,7 @@
         color: #333d4b;
       }
 
-      .collections__subtitle {
+      &__subtitle {
         font-family: "Fraunces";
         font-style: normal;
         font-weight: 900;
@@ -40,7 +40,7 @@
       }
     }
   }
-  .collections__maintext {
+  &__maintext {
     font-size: 100px;
     opacity: 0.9;
     position: absolute;
@@ -55,9 +55,23 @@
       #fefcf7 100%
     );
   }
+
+  &__wrapper {
+    width: 100%;
+    margin-bottom: 70px;
+  }
 }
 
-.collections__wrapper {
-  width: 100%;
-  margin-bottom: 70px;
+@media only screen and (max-width: 500px) {
+  .collections {
+    padding: none;
+    display: block;
+    position: relative;
+    left: 150px;
+    bottom: 50px;
+
+    &__maintext {
+      display: none;
+    }
+  }
 }
